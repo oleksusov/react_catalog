@@ -1,9 +1,9 @@
-# React TypeScript Starter Pack
+# React Phone Catalog
 
-To use this template click `Use this template`
+An interactive website created using functional components, hooks + custom hooks, and localStorage.
 
-### Available Scripts
+Technologies: Fetch, React, Routing, React Router(v6), Typescript, SCSS, BEM.
 
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+- [Figma Layout](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?type=design&node-id=1-2&t=EYrh7LKZvhVRJOUo-0)
+- [Demo Link](https://oleksusov.github.io/react_catalog/)
+- [GitHub](https://github.com/oleksusov/react_catalog/tree/develop)

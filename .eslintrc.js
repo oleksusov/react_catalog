@@ -4,6 +4,12 @@ module.exports = {
     'plugin:react/recommended',
   ],
   rules: {
+    'max-len': ['error', {
+      ignoreTemplateLiterals: true,
+      ignoreComments: true,
+    }],
+    'max-len': ["error", { "code": 130 }],
+    "no-shadow": "off",
     // React
     'react/prop-types': 0,
     'react/self-closing-comp': 0,
