@@ -1,0 +1,124 @@
+@import "../../styles/utils/extends";
+@import "../../styles/utils/variables";
+
+.actions {
+  width: 320px;
+
+  &__label {
+    @extend %small-text;
+    color: $c-secondary;
+  }
+
+  &__list {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $c-element;
+
+    &--first {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__color-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__color-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border: 2px solid $c-white;
+    outline: 1px solid $c-element;
+    border-radius: 50%;
+    transition: all 0.3s;
+
+    &:hover {
+      outline: 1px solid $c-primary;
+    }
+
+    &--active {
+      outline: 1px solid $c-primary;
+    }
+  }
+
+  &__capacity-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__capacity-link {
+    @extend %text;
+    display: block;
+    padding: 7px 8px;
+    background-color: $c-white;
+    color: $c-primary;
+    border: 1px solid $c-element;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: $c-primary;
+    }
+
+    &--active {
+      background-color: $c-primary;
+      color: $c-white;
+      border-color: transparent;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+  }
+
+  &__price-discount {
+    @extend %h1;
+    color: $c-primary;
+  }
+
+  &__price-regular {
+    @extend %h2-reg;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    color: $c-secondary;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr 48px;
+    grid-template-rows: 48px;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  &__characteristic {
+    @extend %small-text;
+    color: $c-secondary;
+  }
+
+  &__value {
+    @extend %small-text;
+    justify-self: end;
+    color: $c-primary;
+  }
+}
