@@ -9,7 +9,7 @@
   &__title {
     @extend %h1;
     margin-top: 16px;
-    color: $primary;
+    color: $c-primary;
   }
 
   &__content {
@@ -21,7 +21,7 @@
   &__notification {
     @extend %h2;
     flex-grow: 2;
-    color: $secondary;
+    color: $c-secondary;
     text-align: center;
   }
 
@@ -30,7 +30,7 @@
     flex-direction: column;
     align-self: flex-start;
     align-items: center;
-    border: 1px solid $elementColor;
+    border: 1px solid $c-element;
   }
 
   &__total-price {
@@ -41,7 +41,7 @@
   &__items-count {
     @extend %text;
     text-align: center;
-    color: $secondary;
+    color: $c-secondary;
 
     &:after {
       content: "";
@@ -49,7 +49,7 @@
       margin-top: 24px;
       width: 320px;
       height: 1px;
-      background-color: $elementColor;
+      background-color: $c-element;
     }
   }
 
@@ -60,8 +60,8 @@
     width: 320px;
     height: 48px;
     margin: 24px;
-    color: $white;
-    background-color: $primary;
+    color: $c-white;
+    background-color: $c-primary;
     outline: none;
     border: none;
   }

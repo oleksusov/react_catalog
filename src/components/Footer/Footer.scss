@@ -2,7 +2,7 @@
 @import "../../styles/utils/variables";
 
 .footer {
-  box-shadow: 0 -1px 0 $elementColor;
+  box-shadow: 0 -1px 0 $c-element;
   
   &__content {
     display: flex;
@@ -22,10 +22,10 @@
     @extend %uppercase;
     text-decoration: none;
     text-transform: uppercase;
-    color: $secondary;
+    color: $c-secondary;
 
     &:hover {
-      color: $primary;
+      color: $c-primary;
     }
   }
 
@@ -44,12 +44,12 @@
       @extend %small-text;
       border: none;
       background-color: transparent;
-      color: $secondary;
+      color: $c-secondary;
       transition: all 0.3s;
     }
 
     &:hover::after {
-      color: $primary;
+      color: $c-primary;
     }
   }
 }

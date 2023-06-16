@@ -5,10 +5,10 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: $primary;
+  background-color: $c-primary;
   border: none;
   text-decoration: none;
-  color: $white;
+  color: $c-white;
   cursor: pointer;
   transition: all 0.3s;
 
@@ -18,27 +18,43 @@
 
   &--selected,
   &:active {
-    background-color: $white;
-    color: $green;
-    border: 1px solid $iconColor;
+    background-color: $c-white;
+    color: $c-green;
+    border: 1px solid $c-icon;
   }
 }
 
 .button-square {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 32px;
   height: 32px;
-  border: 1px solid $iconColor;
-  background-color: $white;
-  color: $primary;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid $c-icon;
+  background-color: $c-white;
+  color: $c-primary;
   cursor: pointer;
   transition: all 0.3s;
 
+  &:active,
+  &:hover {
+    border-color: $c-primary;
+    box-shadow: 0 3px 13px rgba(23, 32, 49, 0.26);
+  }
+  
   &--like {
     width: 100%;
     height: 100%;
+    background-image: url(/img/icons/like.svg);
+  }
+
+  &--filled {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/icons/filled_like.svg);
   }
 
   &--high {
@@ -48,18 +64,15 @@
   &--close {
     width: 16px;
     height: 16px;
+    background-image: url(/img/icons/close.svg);
     border: none;
     opacity: 0.3;
     transition: all 0.3s ;
 
     &:hover {
       opacity: 1;
+      box-shadow: none;
     }
-  }
-
-  &:active,
-  &:hover {
-    border-color: $primary;
   }
 
   &--disabled {
@@ -71,11 +84,11 @@
 .item-button {
   width: 14px;
   height: 4px;
-  background-color: $elementColor;
+  background-color: $c-element;
   cursor: pointer;
   transition: all 0.3s;
 
   &--active {
-    background-color: $primary;
+    background-color: $c-primary;
   }
 }

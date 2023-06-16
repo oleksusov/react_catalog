@@ -29,7 +29,8 @@
     }
 
     &:hover {
-      border: 1px solid $primary;
+      border: 1px solid $c-primary;
+      box-shadow: 0 3px 13px rgba(23, 32, 49, 0.26);
     }
   }
 
@@ -42,7 +43,7 @@
 
   &__title {
     @extend %h3;
-    color: $primary;
+    color: $c-primary;
     margin-top: 24px;
     text-decoration: none;
   }
@@ -50,6 +51,6 @@
   &__discription {
     @extend %text;
     margin-top: 4px;
-    color: $secondary;
+    color: $c-secondary;
   }
 }

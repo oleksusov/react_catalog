@@ -1,15 +1,17 @@
 module.exports = {
   extends: [
-    '@mate-academy/eslint-config-react-typescript',
+    'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
   ],
   rules: {
     'max-len': ['error', {
       ignoreTemplateLiterals: true,
       ignoreComments: true,
     }],
-    'max-len': ["error", { "code": 130 }],
-    "no-shadow": "off",
+    'max-len': ['error', { 'code': 130 }],
+    'no-shadow': 'off',
     // React
     'react/prop-types': 0,
     'react/self-closing-comp': 0,
@@ -18,7 +20,7 @@ module.exports = {
     // JavaScript
     semi: 0,
     'no-proto': 0,
-    'no-unused-vars': 0,
+    'no-unused-vars': 'off',
 
     // TypeScript
     '@typescript-eslint/no-unused-vars': ['error'],
@@ -27,8 +29,4 @@ module.exports = {
     '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/semi': ['error'],
   },
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-  ],
 };

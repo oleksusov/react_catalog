@@ -27,12 +27,12 @@
     margin-left: 13px;
     text-transform: capitalize;
     text-decoration: none;
-    color: $primary;
+    color: $c-primary;
     cursor: pointer;
 
     &--disabled {
       pointer-events: none;
-      color: $secondary;
+      color: $c-secondary;
     }
   }
 

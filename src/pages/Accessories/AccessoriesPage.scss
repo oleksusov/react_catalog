@@ -5,19 +5,19 @@
   &__title {
     @extend %h1;
     margin-top: 40px;
-    color: $primary;
+    color: $c-primary;
   }
 
   &__description {
     @extend %text;
     margin-top: 8px;
-    color: $secondary;
+    color: $c-secondary;
   }
 
   &__notification {
     @extend %h2;
     flex-grow: 2;
-    color: $secondary;
+    color: $c-secondary;
     text-align: center;
   }
 }

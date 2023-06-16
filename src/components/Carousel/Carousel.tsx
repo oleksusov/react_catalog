@@ -1,7 +1,7 @@
 import './Carousel.scss';
 
-import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
+import React, { useEffect, useState } from 'react';
 
 const images = [
   'banner-phones.png',

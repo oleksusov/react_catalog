@@ -19,8 +19,8 @@
   &__loading {
     width: 90px;
     height: 90px;
-    border: 10px solid $secondary;
-    border-top: 10px solid $primary;
+    border: 10px solid $c-secondary;
+    border-top: 10px solid $c-primary;
     border-radius: 50%;
     animation: spinner 1.5s linear infinite;
   }

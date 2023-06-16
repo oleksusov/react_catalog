@@ -7,14 +7,13 @@
   align-items: center;
   gap: 24px;
   padding: 24px 40px 24px 24px;
-  border: 1px solid $elementColor;
+  border: 1px solid $c-element;
 
   &__image-container {
     width: 80px;
     height: 80px;
     padding: 7px;
     transition: all 0.3s;
-    cursor: pointer;
   }
 
   &__image {

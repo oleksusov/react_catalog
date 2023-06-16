@@ -1,8 +1,7 @@
+import classNames from 'classnames';
 import './Breadcrumbs.scss';
 
 import React from 'react';
-import classNames from 'classnames';
-
 import { Link, useLocation } from 'react-router-dom';
 
 export const Breadcrumbs: React.FC = () => {

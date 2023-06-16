@@ -9,13 +9,32 @@
   &__title {
     @extend %h1;
     margin-top: 40px;
-    color: $primary;
+    color: $c-primary;
   }
 
   &__description {
     @extend %text;
     margin-top: 8px;
-    color: $secondary;
+    color: $c-secondary;
+  }
+
+  &__content {
+    margin: 40px 0 80px;
+  }
+
+  &__pickers {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__product-list {
+    margin-top: 24px;
+  }
+  
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
   }
 
   &__product-list {

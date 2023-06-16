@@ -1,8 +1,8 @@
 import './Picker.scss';
 
 import React, { useState } from 'react';
-import classNames from 'classnames';
 import { Link, useSearchParams } from 'react-router-dom';
+import classNames from 'classnames';
 import { getSearchWith } from '../../helpers/getSearchWith';
 
 type Props = {
